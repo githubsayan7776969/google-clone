@@ -34,7 +34,7 @@ export async function getServerSideProps(context) {
   const API_KEY = process.env.API_KEY;
   const CONTEXT_KEY = process.env.CONTEXT_KEY;
 
-  const useDummyData = false; //true for devlopment (mock results)
+  const useDummyData = true; //true for devlopment (mock results)
   const startIndex = context.query.start || "0";
 
   const data = useDummyData
